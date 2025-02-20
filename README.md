@@ -15,8 +15,8 @@ For Sitecore 9.1 take a look in (https://github.com/chorpo/Sitecore.Algolia) pre
 For Sitecore 7 and 8 take a look in [original GitHub Repository](https://github.com/dharnitski/Sitecore.Algolia/) prepared by [Dmitry Harnitski](https://github.com/dharnitski)
 
 Test project includes sample configuration files:
-* [Index Configuration](https://github.com/Madhumidha/Sitecore.Algolia/blob/develop/Score.ContentSearch.Algolia.Tests/SampleConfiguration/AlgoliaTestConfiguration.Sc1021.config) 
-* [Index Definition](https://github.com/Madhumidha/Sitecore.Algolia/blob/develop/Score.ContentSearch.Algolia.Tests/SampleConfiguration/AlgoliaTestIndex.Sc1021.config) 
+* [Index Configuration](https://github.com/Madhumidha/Sitecore.Algolia/blob/Sitecore1021/Score.ContentSearch.Algolia.Tests/SampleConfiguration/AlgoliaTestConfiguration.Sc1021.config) 
+* [Index Definition](https://github.com/Madhumidha/Sitecore.Algolia/blob/Sitecore1021/Score.ContentSearch.Algolia.Tests/SampleConfiguration/AlgoliaTestIndex.Sc1021.config) 
 
 Copy these files into *site-root/App_Config/Include* folder. Now we need to make some changes to connect index with your Algolia account and filter data to include only relevant content.
 
