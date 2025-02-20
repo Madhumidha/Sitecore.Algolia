@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Score.ContentSearch.Algolia", "Score.ContentSearch.Algolia\Score.ContentSearch.Algolia.csproj", "{E3738FD4-B555-4810-B730-6344481DA163}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Score.ContentSearch.Algolia.Tests", "Score.ContentSearch.Algolia.Tests\Score.ContentSearch.Algolia.Tests.csproj", "{FBBBFB78-831A-4D66-AB1C-4B290CA042DB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algolia.Search", "Algolia.Search\Algolia.Search.csproj", "{95FAB4CB-E7B7-4DA2-8CC7-C322F5AD78C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{09859DF4-CA7A-4B97-9A6F-D41EE32885C5}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{09859D
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Score.ContentSearch.Algolia.Tests", "..\..\Sitecore.Algolia\Score.ContentSearch.Algolia.Tests\Score.ContentSearch.Algolia.Tests.csproj", "{FBBBFB78-831A-4D66-AB1C-4B290CA042DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,16 +30,15 @@ Global
 		{FBBBFB78-831A-4D66-AB1C-4B290CA042DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FBBBFB78-831A-4D66-AB1C-4B290CA042DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBBBFB78-831A-4D66-AB1C-4B290CA042DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBBFB78-831A-4D66-AB1C-4B290CA042DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FBBBFB78-831A-4D66-AB1C-4B290CA042DB}.Sandbox|Any CPU.ActiveCfg = Sandbox|Any CPU
 		{FBBBFB78-831A-4D66-AB1C-4B290CA042DB}.Sandbox|Any CPU.Build.0 = Sandbox|Any CPU
-		{95FAB4CB-E7B7-4DA2-8CC7-C322F5AD78C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95FAB4CB-E7B7-4DA2-8CC7-C322F5AD78C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95FAB4CB-E7B7-4DA2-8CC7-C322F5AD78C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95FAB4CB-E7B7-4DA2-8CC7-C322F5AD78C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{95FAB4CB-E7B7-4DA2-8CC7-C322F5AD78C4}.Sandbox|Any CPU.ActiveCfg = Sandbox|Any CPU
-		{95FAB4CB-E7B7-4DA2-8CC7-C322F5AD78C4}.Sandbox|Any CPU.Build.0 = Sandbox|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {836A2201-44D1-4B5D-9AA7-EE4F65D407EE}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

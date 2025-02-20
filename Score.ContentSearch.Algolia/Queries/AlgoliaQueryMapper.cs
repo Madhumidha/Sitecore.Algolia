@@ -5,7 +5,7 @@ using Sitecore.ContentSearch.Linq.Extensions;
 using Sitecore.ContentSearch.Linq.Methods;
 using Sitecore.ContentSearch.Linq.Nodes;
 using Sitecore.ContentSearch.Linq.Parsing;
-using Query = Algolia.Search.Query;
+using Query = Algolia.Search.Models.Search.Query;
 
 namespace Score.ContentSearch.Algolia.Queries
 {
@@ -15,7 +15,7 @@ namespace Score.ContentSearch.Algolia.Queries
         {
             var mappingState = new AlgoliaQueryMapperState();
             this.Visit(query.RootNode, mappingState);
-            var algoliaQuery = LoadFromState(mappingState);
+            Query algoliaQuery = LoadFromState(mappingState);
             return new AlgoliaQuery(algoliaQuery);
         }
 
@@ -29,7 +29,7 @@ namespace Score.ContentSearch.Algolia.Queries
             if (takeMethod != null)
             {
                 int take = takeMethod.Count;
-                query.SetNbHitsPerPage(take);
+                query.HitsPerPage = take;
                 if (skipMethod != null)
                 {
                     var skip = skipMethod.Count;
@@ -37,8 +37,8 @@ namespace Score.ContentSearch.Algolia.Queries
                     if (skip % take > 0)
                         throw new Exception("Skip and Take cannot be translated to number of pages");
 
-                    var page = skip/take;
-                    query.SetPage(page);
+                    var page = skip / take;
+                    query.Page = page;
                 }
             }
             else

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using Algolia.Search;
+using Algolia.Search.Models.Search;
 using Sitecore.ContentSearch.Linq.Common;
 
 namespace Score.ContentSearch.Algolia.Queries
